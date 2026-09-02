@@ -1,0 +1,40 @@
+name: WSMP-Fishing
+version: '1.0.0'
+main: com.warriorssmp.fishing.FishingPlugin
+api-version: '1.21'
+author: WarriorsSMP
+softdepend: [Vault, PlaceholderAPI]
+
+commands:
+  fishmenu:
+    description: Open the Fishing menu
+    aliases: [fishing]
+  fishtask:
+    description: View your active Fishing task
+  fishleaderboards:
+    description: View the Fishing leaderboard
+    aliases: [fishleaderboard]
+  fishbuffs:
+    description: View your active Fishing buffs
+  fishshop:
+    description: Open the Fishing shop (must be near the Angler)
+  fishshopadmin:
+    description: Admin editor for the Fishing shop
+    permission: fishing.admin
+  fishmenuadmin:
+    description: Admin view of the Fishing menu / player data
+    permission: fishing.admin
+  fisheditor:
+    description: Admin editor for Fishing tasks and tiers
+    permission: fishing.admin
+  fishmaster:
+    description: Spawn or manage the Angler NPC
+    permission: fishing.admin
+
+permissions:
+  fishing.admin:
+    description: Access to Fishing admin commands
+    default: op
+  premiumfishing:
+    description: Access to Tier 3-7 Fishing content
+    default: false
